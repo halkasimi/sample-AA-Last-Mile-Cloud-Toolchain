@@ -37,7 +37,7 @@ describe('controllers', function() {
           .expect('Content-Type', /json/)
           .expect(200)
           .end(function(err, res) {
-            should.not.exist(err);
+            should.not.exist(err); 
 
             res.body.should.eql('Hello, Scott!');
 
